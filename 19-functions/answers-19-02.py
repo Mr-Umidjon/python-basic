@@ -13,17 +13,6 @@ def kvadrat_kub_hisobla(son):
 kvadrat_kub_hisobla(2)
 kvadrat_kub_hisobla(21)
 
-# Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi 
-# funksiya yozing.
-def juftmi(son):
-    """Sonning juft yoki toqligini hisoblovchi funksiya"""
-    if son%2 == 0:
-        print(f"{son} juft son")
-    else:
-        print(f"{son} toq son")
-juftmi(23)
-juftmi(654)
-
 # Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi 
 # funksiya yozing. Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni 
 # chiqaring.
