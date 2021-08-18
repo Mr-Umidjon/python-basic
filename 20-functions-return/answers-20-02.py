@@ -7,10 +7,22 @@ Created on Wed Aug 18 14:32:19 2021
 
 # Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
 # email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida 
-# qaytaruvchi funksiya yozing. Lug'atda foydalanuvchu yoshi ham bo'lsin. 
+# qaytaruvchi funksiya yozing. Lug'atda foydalanuvchining yoshi ham bo'lsin. 
 # Ba'zi argumentlarni kiritishni ixtiyoriy qiling (masalan, tel.raqam, el.manzil)
-def 
-# Yuqoridagi funksiyani while yordamida bir necha bor chaqiring, va mijozlar degan ro'yxatni shakllantiring. Ro'yxatdagi mijozlar haqidagi ma'lumotni konsolga chiqaring.
+def user_info(ism, familiya, tyil, tjoy, yosh, email=None, telefon=None):
+    info = {'ism':ism,
+            "familiya":familiya,
+            "tyil":tyil,
+            'tjoy':tjoy,
+            "yosh":yosh ,
+            'email':email,
+            "telefon":telefon       
+        }
+    return info
+user = user_info("ali", "valiyev", 1987, "andijon", 23)
+# Yuqoridagi funksiyani while yordamida bir necha bor chaqiring, va mijozlar
+# degan ro'yxatni shakllantiring. Ro'yxatdagi mijozlar haqidagi ma'lumotni
+# konsolga chiqaring.
 
 # Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
 
