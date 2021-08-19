@@ -5,7 +5,6 @@ Created on Thu Aug 19 10:31:57 2021
 @author: WINDOWS 10
 """
 
-
 # Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya yozing 
 # (tub sonlar — faqat birga va o'ziga qoldiqsiz bo'linuvchi, 1 dan katta musbat sonlar)
 def tub_son(a, b):

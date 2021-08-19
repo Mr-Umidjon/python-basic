@@ -8,12 +8,12 @@ Created on Thu Aug 19 10:30:40 2021
 # Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
 # diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya
 # yozing
-def aylana(radius):
+def aylana_info(radius, pi = 3.14159):
     """Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
     diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
     diametr = 2 * radius
-    perimetr = 2 * 3.14 * radius
-    yuza = 3.14 * radius**2
+    perimetr = 2 * pi * radius
+    yuza = pi * radius**2
     aylana = {
         "radius": radius,
         "diametr": diametr,
@@ -22,4 +22,4 @@ def aylana(radius):
         }
     return aylana
 
-print(aylana(100))
+print(aylana_info(100))
