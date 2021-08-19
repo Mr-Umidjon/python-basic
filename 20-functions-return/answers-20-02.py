@@ -42,45 +42,4 @@ for mijoz in mijozlar:
     info = f"{mijoz['ism'].title()} {mijoz['familiya'].title()} "
     info += f"{mijoz['tyil']}-yilda {mijoz['tjoy'].title()}da tug'ilgan. "
 
-
-
-
-# Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
-# diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya
-# yozing
-def aylana(radius):
-    """Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
-    diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
-    diametr = 2 * radius
-    perimetr = 2 * 3.14 * radius
-    yuza = 3.14 * radius**2
-    aylana = {
-        "radius": radius,
-        "diametr": diametr,
-        "perimetr": perimetr,
-        "yuza": yuza
-        }
-    return aylana
-    
-
-# Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya yozing 
-# (tub sonlar — faqat birga va o'ziga qoldiqsiz bo'linuvchi, 1 dan katta musbat sonlar)
-def tub_son(a, b):
-    """Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya"""
-    tub_sonlar = []
-    for son in range(a, b+1):
-        tub = True
-        if son == 1:
-            tub = False
-        elif son == 2:
-            tub = True
-        else:
-            for x in range(2, son):
-                if son%x == 0:
-                    tub = False
-        if tub:
-            tub_sonlar.append(son)
-    return tub_sonlar
         
-        
-# Foydalanuvchidan son qabul qilib, shu son miqdoricha Fibonachchi ketma-ketligidagi sonlar ro'yxatni qaytaruvchi funksiya yozing. Ta’rif: Har bir hadi o’zidan oldingi ikkita hadning yig’indisiga teng bo’lgan ketma-ketlik Fibonachchi ketma-ketligi deyiladi. Bunda boshlang’ish had ko’pincha 1 deb olinadi. 1, 1, 2, 3, 5, 8, 13, 21, 34, 55,.
