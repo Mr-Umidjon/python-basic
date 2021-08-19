@@ -20,13 +20,57 @@ def user_info(ism, familiya, tyil, tjoy, yosh, email=None, telefon=None):
         }
     return info
 user = user_info("ali", "valiyev", 1987, "andijon", 23)
+
 # Yuqoridagi funksiyani while yordamida bir necha bor chaqiring, va mijozlar
 # degan ro'yxatni shakllantiring. Ro'yxatdagi mijozlar haqidagi ma'lumotni
 # konsolga chiqaring.
+mijozlar = []
+# while True:
+#     print("\nMijoz haqida quyidagi ma'lumotlarni kiriting ")
+#     ism = input("Ismi: ")
+#     familiya = input("Familiyasi: ")
+#     tyil = int(input("Tug'ilgan yili:"))
+#     tjoy = input("Tug'ilgan joyi: ")
+#     yosh = int(input("Yoshi: "))
+#     email = input("Email manzili: ")
+#     telefon = input("Telefon raqami: ")
+#     mijozlar.append(user_info(ism, familiya, tyil, tjoy, yosh, email, telefon))
+#     javob = input("Yana mijoz haqida ma'lumot kiritasizmi(yes/no)")
+#     if javob == 'no':
+#         break
+# for mijoz in mijozlar:
+#     info = f"{mijoz['ism'].title()} {mijoz['familiya'].title()} "
+#     info += f"{mijoz['tyil']}-yilda {mijoz['tjoy'].title()}da tug'ilgan. "
+
 
 # Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+def max_top(a, b, c):
+    """Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya"""
+    if a > b and a > c:
+        max = a
+    elif b > a and b > a:
+        max = b
+    else:
+        max = c
+    return max
 
-# Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya yozing
+# Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
+# diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya
+# yozing
+def aylana(radius):
+    """Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
+    diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya"""
+    diametr = 2 * radius
+    perimetr = 2 * 3.14 * radius
+    yuza = 3.14 * radius**2
+    aylana = {
+        "radius": radius,
+        "diametr": diametr,
+        "perimetr": perimetr,
+        "yuza": yuza
+        }
+    return aylana
+    
 
 # Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya yozing (tub sonlar —faqat birga va o'ziga qoldiqsiz bo'linuvchi, 1 dan katta musbat sonlar)
 
