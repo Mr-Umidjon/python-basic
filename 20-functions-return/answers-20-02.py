@@ -43,16 +43,7 @@ for mijoz in mijozlar:
     info += f"{mijoz['tyil']}-yilda {mijoz['tjoy'].title()}da tug'ilgan. "
 
 
-# Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
-def max_top(a, b, c):
-    """Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya"""
-    if a > b and a > c:
-        max = a
-    elif b > a and b > a:
-        max = b
-    else:
-        max = c
-    return max
+
 
 # Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, 
 # diametrini, perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya
