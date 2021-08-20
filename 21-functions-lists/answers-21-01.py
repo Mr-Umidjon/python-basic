@@ -44,4 +44,6 @@ print(yangi_ismlar)
 
 # ['Ali', 'Vali', 'Hasan', 'Husan']
 
-# Darsimiz davomida yozgan bahola funksiyasini .pop() metodidan foydalanmasdan va asl ro'yxatga o'zgartirish kiritmasdan faqat lug'at qaytaradigan qilib yozing.
+# Darsimiz davomida yozgan bahola funksiyasini .pop() metodidan 
+# foydalanmasdan va asl ro'yxatga o'zgartirish kiritmasdan faqat lug'at 
+# qaytaradigan qilib yozing.
